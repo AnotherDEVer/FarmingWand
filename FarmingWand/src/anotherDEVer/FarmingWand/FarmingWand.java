@@ -8,6 +8,7 @@ import org.bukkit.block.*;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.World;
 
 public final class FarmingWand extends JavaPlugin implements Listener
 {
@@ -27,7 +28,7 @@ public final class FarmingWand extends JavaPlugin implements Listener
 		
 		if (heldItem.getTypeId() == 294)
 		{
-			interacter.giveExp(2000);
+			Block farm = event.getClickedBlock();
 		}
 	}
 }
